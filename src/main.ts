@@ -7,9 +7,9 @@ import { AppModule } from './app.module';
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
-  app.setBaseViewsDir(join(__dirname, 'assets', 'views'));
+  app.setBaseViewsDir(join(__dirname, '..', 'views'));
   app.setViewEngine('hbs');
-  
+
   await app.listen(process.env.PORT || 3000);
 }
 
