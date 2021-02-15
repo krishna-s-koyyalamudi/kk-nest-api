@@ -22,7 +22,7 @@ describe('AppController', () => {
 
   describe('about', () => {
     it('should return a hbs webpage',() =>{
-      expect(appController.g)
+      expect(appController.getHello)
     })
   })
 });
