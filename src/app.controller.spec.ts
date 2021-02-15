@@ -19,4 +19,10 @@ describe('AppController', () => {
       expect(appController.getHello()).toBe('Hello World from Krishna Sumanth Koyyalamudi!');
     });
   });
+
+  describe('about', () => {
+    it('should return a hbs webpage',() =>{
+      expect(appController.g)
+    })
+  })
 });
